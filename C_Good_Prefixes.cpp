@@ -11,17 +11,20 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        ll sum = 0;
-        int ans = 0;
-        map<ll,int> mp;
+        vector<ll> a(n);
         for(int i = 0; i < n; i++){
-            ll x;
-            cin >> x;
-            sum += x;
-            mp[x]++;
-            if(sum % 2 == 0 && mp[sum/2] > 0)ans++;
+            cin >> a[i];
         }
-        cout << ans << endl;
+        sort(a.begin(),a.end());
+        int l = 0,r = n-1;
+        while(l < r){
+            if(a[l] != a[r]){
+                l++;
+                r--;
+            }
+            else break;
+        }
+        cout << r-l+1 << endl;
     }
     
       

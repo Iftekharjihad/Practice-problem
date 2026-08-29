@@ -11,10 +11,12 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        string s;
-        cin >> s;
-        if(s[0] != s[n-1])cout << "YES" << endl;
-        else cout << "NO" << endl;
+        vector<int> a(n);
+        for(int i = 0; i < n; i++){
+            cin >> a[i];
+        }
+        sort(a.begin(),a.end());
+        cout << a[n/2] << endl;
     }
     
       

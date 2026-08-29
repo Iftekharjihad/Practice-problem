@@ -11,10 +11,11 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        string s;
-        cin >> s;
-        if(s[0] != s[n-1])cout << "YES" << endl;
-        else cout << "NO" << endl;
+        vector<ll> a(n);
+        for(int i = 0; i < n; i++){
+            cin >> a[i];
+        }
+        cout << __gcd(a[0],a[n-1]) << endl;
     }
     
       

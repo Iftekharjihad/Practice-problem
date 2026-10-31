@@ -1,0 +1,1 @@
+{"name":"Local: D_solve","url":"d:\\.d\\CP\\preparation & practice\\D_solve.cpp","tests":[{"id":1793363260904,"input":"3\n8\ncentered\n5\nabbba\n5\naabbz\n","output":"NO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\.d\\CP\\preparation & practice\\D_solve.cpp","group":"local","local":true}
